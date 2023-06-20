@@ -11721,7 +11721,8 @@ body{
 @media (max-width:480px) {
   
   #pantalla-comienzo-juego{
-    height: 95vh;
+    height: 100vh;
+    min-height: -webkit-fill-available;
   }
   #fila-botoneria > .btn-falso {
       width: 50%;
@@ -11732,7 +11733,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: auto;
+    height: -webkit-fill-available;
   }
 
   .card-body{
