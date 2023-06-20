@@ -11323,14 +11323,7 @@ body{
 
 .contendor-padre{
   display: flex;
-  height: 100vh;
   box-sizing: border-box;
-}
-
-#pantalla-comienzo-juego{
-  display: flex;
-  justify-content:center;
-  align-items: center;
 }
 
 
@@ -11361,17 +11354,6 @@ body{
   color: white;
 }
 
-@media (max-width:480px) {
-  #contenedor-tarjeta{
-    height: auto;
-  } 
-  #pantalla-comienzo-juego{
-    height: auto;
-    box-sizing: border-box;
-    display: flex;
-    justify-content:flex-start;
-  }
-}
 
 /* Pantalla start */
 
@@ -11686,6 +11668,14 @@ body{
 
 /* Pantalla datos en vivo -----------------------------------------*/
 
+.contenedor__padre__contenedor{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: -webkit-fill-available;
+  height: 80vh;
+}
+
 .contenedor-barra-progreso{
   width: 100%;
   display: block;
@@ -11709,12 +11699,13 @@ body{
   height: 100px;
 }
 
-
-#pantalla-comienzo-juego{
+.contenedor__padre__contenedor{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: -webkit-fill-available;
   height: 100vh;
-  min-height: -webkit-fill-available;
 }
-
 
 
 @media (max-width:480px) {
@@ -11736,6 +11727,10 @@ body{
     width: 100%;
     position:fixed
   }
+
+  #contenedor-tarjeta{
+    height: auto;
+  } 
 
 
 }
@@ -11778,6 +11773,8 @@ body{
     margin-right: .20em;
   }
 }
+
+
 
 
 
@@ -12460,14 +12457,6 @@ body{
   align-content: center;
   margin-bottom: 24px;
 }
-
-.contenedor__padre__contenedor{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 90vh;
-}
-
 
 
 
