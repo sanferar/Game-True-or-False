@@ -11382,16 +11382,17 @@ body{
   justify-content: center;
   background: whitesmoke;
   width: 100%;
-  height: 80vh;
 }
 
 .pantalla-start-text{
   box-sizing: border-box;
   display: flex;
+  gap: 3rem;
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  max-width: 800px;
+  max-width: 900px;
+  margin: 4rem 0rem 4rem 0rem;
 }
 
 .pantalla-start ul{
@@ -11407,8 +11408,6 @@ body{
 
 .pantalla-start-p{
   margin: 1em 3em;
-  text-align: center;
-  
 }
 
 
@@ -11478,7 +11477,6 @@ body{
     justify-content: center;
     align-items: flex-start;
     flex-flow: column;
-    height: 100vh;
     width: 100vw;
     padding: 2em;
   }
@@ -11499,7 +11497,7 @@ body{
   
   .pantalla-start-p{
     margin: 1em 0em;
-    font-size: 0.75rem;
+    font-size: 1rem;
     text-align: left;
   }
   
@@ -12580,6 +12578,7 @@ body{
     background-color: #fff;
     padding: 1.2rem;
     border-radius: 10px;
+    width: 100%;
   }
   .contenedor__info__tiempo .bi{
     font-size: 2rem;
@@ -12592,6 +12591,7 @@ body{
     background-color: #fff;
     padding: 1.2rem;
     border-radius: 10px;
+    width: 100%;
   }
   .contenedor__info__puntos .bi{
     font-size: 2rem;
@@ -12604,6 +12604,7 @@ body{
     background-color: #fff;
     padding: 1.2rem;
     border-radius: 10px;
+    width: 100%;
   }
   .contenedor__info__aciertos .bi{
     font-size: 2rem;
@@ -12616,6 +12617,7 @@ body{
     background-color: #fff;
     padding: 1.2rem;
     border-radius: 10px;
+    width: 100%;
   }
   .contenedor__info__fallos .bi{
     font-size: 2rem;
@@ -12628,6 +12630,7 @@ body{
     background-color: #fff;
     padding: 1.2rem;
     border-radius: 10px;
+    width: 100%;
   }
   .contenedor__info__logros .bi{
     font-size: 2rem;
