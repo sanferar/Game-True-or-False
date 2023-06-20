@@ -11728,6 +11728,19 @@ body{
       height: 100%;
   }
 
+  .contenedor__padre__contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+  }
+
+  .card-body{
+    width: 100%;
+    position:fixed
+  }
+
+
 }
 
 .caja-info-dato{
@@ -12455,7 +12468,7 @@ body{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
+  height: 90vh;
 }
 
 
