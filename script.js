@@ -100,7 +100,7 @@ function comprobacionNivel() {
     </svg>`;
     contenedorLogroUno.classList.add('contenedor__logro__1')
     document.querySelector('.contenedor__logros').appendChild(contenedorLogroUno);
-    alert('Has alcanzado nivel 1')
+    alert('¡¡Has alcanzado nivel 1 🎉🎉!! ¡¡Has conseguido una ⭐!!')
     nivelUnoAlcanzado = true;
 
   }
@@ -125,7 +125,7 @@ function comprobacionNivelDos() {
     </svg>`;
     contenedorLogroDos.classList.add('contenedor__logro__2')
     document.querySelector('.contenedor__logros').appendChild(contenedorLogroDos);
-    alert('Has alcanzado nivel 2')
+    alert('¡¡Has alcanzado nivel 2 🎉🎉!! ¡¡Has conseguido tu segunda ⭐!!')
     nivelDosAlcanzado = true;
   }
 }
@@ -149,7 +149,7 @@ function comprobacionNivelTres() {
     </svg>`;
     contenedorLogroTres.classList.add('contenedor__logro__3')
     document.querySelector('.contenedor__logros').appendChild(contenedorLogroTres);
-    alert('Has alcanzado nivel 3')
+    alert('¡¡Has alcanzado nivel 3 🎉🎉!! ¡¡Lograste las tres estrellas ⭐!!')
     nivelTresAlcanzado = true;
   }
 }
@@ -157,7 +157,7 @@ function comprobacionNivelTres() {
 /* Juego acabado--------------------- */
 function juegoFin(){
   if(sfTiempoTotal >= 100){
-    return alert('Juego acabado, ¡felicidades!');
+    return alert('🎉🎉 ¡Te has pasado el juego! 🎉🎉 ');
   }
 }
 
@@ -210,6 +210,7 @@ if (document.body.classList.contains('index')) {
         let textoEnunciado = obj.enunciado;
         let articulo = obj.articulo;
         let objResp = obj.correcta;
+        console.log(objResp)
         historialRespuestasPreguntas.push(objResp);
         historialPreguntas.push(obj);
         enunciadoPregunta.innerHTML = `Se dispone de ${diasPlazo}. ${textoEnunciado} ${articulo}`;

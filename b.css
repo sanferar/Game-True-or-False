@@ -11381,7 +11381,6 @@ body{
   align-items: center;
   justify-content: center;
   background: whitesmoke;
-  height: 100%;
   width: 100%;
 }
 
@@ -11391,7 +11390,6 @@ body{
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  height: 100vh;
   max-width: 800px;
 }
 
@@ -11718,9 +11716,6 @@ body{
   min-height: -webkit-fill-available;
 }
 
-html {
-  min-height: -webkit-fill-available;
-}
 
 
 @media (max-width:480px) {
@@ -12487,4 +12482,154 @@ html {
 
 .progress{
   height: auto;
+}
+
+.contenedor__info{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 0.90em;
+  gap: 1rem;
+}
+
+.contenedor__info__tiempo{
+  display: flex;
+  width: 250px;
+  justify-content: flex-start;
+  gap: 12px;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 10px;
+}
+.contenedor__info__tiempo .bi{
+  font-size: 2rem;
+}
+.contenedor__info__puntos{
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+  width: 250px;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 10px;
+}
+.contenedor__info__puntos .bi{
+  font-size: 2rem;
+}
+.contenedor__info__aciertos{
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+  width: 250px;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 10px;
+}
+.contenedor__info__aciertos .bi{
+  font-size: 2rem;
+}
+.contenedor__info__fallos{
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+  width: 250px;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 10px;
+}
+.contenedor__info__fallos .bi{
+  font-size: 2rem;
+}
+.contenedor__info__logros{
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+  width: 250px;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 10px;
+}
+.contenedor__info__logros .bi{
+  font-size: 2rem;
+}
+
+
+
+/* Media query iconos e info--------------- */
+
+@media (max-width:480px){
+  .contenedor__info{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 0.90em;
+    gap: 1rem;
+  }
+
+  .contenedor__info__tiempo{
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1.2rem;
+    border-radius: 10px;
+  }
+  .contenedor__info__tiempo .bi{
+    font-size: 2rem;
+  }
+  .contenedor__info__puntos{
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1.2rem;
+    border-radius: 10px;
+  }
+  .contenedor__info__puntos .bi{
+    font-size: 2rem;
+  }
+  .contenedor__info__aciertos{
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1.2rem;
+    border-radius: 10px;
+  }
+  .contenedor__info__aciertos .bi{
+    font-size: 2rem;
+  }
+  .contenedor__info__fallos{
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1.2rem;
+    border-radius: 10px;
+  }
+  .contenedor__info__fallos .bi{
+    font-size: 2rem;
+  }
+  .contenedor__info__logros{
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1.2rem;
+    border-radius: 10px;
+  }
+  .contenedor__info__logros .bi{
+    font-size: 2rem;
+  }
+
 }
