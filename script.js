@@ -65,7 +65,7 @@ const enunciadosFallados = [];
 
 
 /* Contadores   --------------------------------------*/
-let sfTiempoTotal = 30;
+let sfTiempoTotal = 300;
 let preguntasContadas = 0;
 let contador = 0;
 let contadorFalladas = 0;

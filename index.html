@@ -19,7 +19,11 @@
 
 <body class="index">
   <div class="contenedor-padre">
-    <div class="card text-center" id="pantalla-comienzo-juego">
+
+    <!-- Contenedor de datos, tarjetas y botonería -->
+    <div class="contenedor__padre__contenedor text-center" id="pantalla-comienzo-juego">
+
+      <!-- Datos de la cabecera live   -->
       <div class="card-header cabecera-datos-live">
         <p class="Temporizador caja-info-dato"><i class="bi bi-stopwatch"></i><span id="tiempo-total">30</span></p>
         <p class="contador caja-info-dato"><i class="bi bi-bar-chart-fill"></i>
@@ -35,13 +39,16 @@
         <p class="estadistica-aciertos caja-info-dato"><i class="bi bi-percent"></i><i class="bi bi-hand-thumbs-up"></i>
           <span id="estd-aciertos">0</span>
         </p>
-      </div>
+      </div><!-- Fin datos de la cabecera live  -->
+
       <!-- Barra de progreso para el tiempo -->
       <div class="contenedor-barra-progreso">
         <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
           <div class="progress-bar"></div>
         </div>
-      </div>
+      </div> <!-- Fin barra progreso -->
+
+      <!-- Tarjeta con el enunciado y las tarjetas de decoracion -->
       <div class="card-body" id="contenedor-tarjeta">
         <div class="tarjeta-movimiento-1 card-1"></div>
         <div class="tarjeta-movimiento-2 card-2"></div>
@@ -49,15 +56,20 @@
         <div class="tarjeta-movimiento" id="tarjeta-move">
           <h5 class="pregunta hide"><!-- Enunciado aqui. --></h5>
         </div>
-      </div>
+      </div><!-- Fin tarjetas y enunciado -->
+
+      <!-- Aquí los logros o estrellas -->
       <div class="contenedor__logros">
         <!-- Aqui los elementos appendChild -->
-      </div>
+      </div><!-- Fin elementos de logros -->
 
+
+      <!-- Botoneria -->
       <div class="row" id="fila-botoneria">
         <button type="button" class="btn btn-success btn-verdadero btn-ripple-verdadero">Verdadero</button>
         <button type="button" class="btn btn-danger btn-falso btn-ripple-falso">Falso</button>
-      </div>
+      </div><!-- Fin botonería -->
+
     </div>
   </div>
 
