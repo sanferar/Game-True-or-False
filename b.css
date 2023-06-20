@@ -11488,9 +11488,9 @@ body{
   }
   
   .pantalla-start-h1 > .h1{
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: 'Nunito', regular;
-    text-align: left;
+    text-align: center;
     line-height: 1em;
     margin-bottom: .50em;
   }
@@ -11719,10 +11719,6 @@ body{
 
 @media (max-width:480px) {
   
-  #pantalla-comienzo-juego{
-    height: 100vh;
-    min-height: -webkit-fill-available;
-  }
   #fila-botoneria > .btn-falso {
       width: 50%;
       height: 100%;
@@ -11733,6 +11729,7 @@ body{
     flex-direction: column;
     justify-content: center;
     height: -webkit-fill-available;
+    height: 80vh;
   }
 
   .card-body{
