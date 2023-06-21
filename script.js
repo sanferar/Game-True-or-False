@@ -33,19 +33,19 @@ function actualizarBarraProgreso() {
   const porcentaje = (sfTiempoTotal / 100) * 100; // Calcula el porcentaje de tiempo restante
   barraProgreso.style.width = porcentaje + '%'; // Actualiza el ancho de la barra de progreso
 
-  if(porcentaje >= 80){
+  if (porcentaje >= 80) {
     barraProgreso.classList.remove('bg-info');
     barraProgreso.classList.add('bg-success');
   }
-  if(porcentaje >= 40 && porcentaje < 80){
+  if (porcentaje >= 40 && porcentaje < 80) {
     barraProgreso.classList.remove('bg-warning', 'bg-success');
     barraProgreso.classList.add('bg-info');
   }
-  if(porcentaje <= 30){
+  if (porcentaje <= 30) {
     barraProgreso.classList.remove('bg-danger');
     barraProgreso.classList.add('bg-warning');
-  } 
-  if(porcentaje <= 10){
+  }
+  if (porcentaje <= 10) {
     barraProgreso.classList.remove('bg-warning');
     barraProgreso.classList.add('bg-danger');
   }
@@ -56,6 +56,26 @@ function actualizarBarraProgreso() {
 
 const btnVerdaderoRipple = document.querySelector(".btn-ripple-verdadero");
 const btnFalsoRipple = document.querySelector(".btn-ripple-falso");
+
+
+/* Efecto confetti -------------------------------- */
+
+const panelCanvas = document.getElementById('my-canvas');
+panelCanvas.classList.add('canvas-transition')
+console.log(panelCanvas);
+
+function efectoConfeti() {
+  var confettiSettings = { 
+    target: 'my-canvas' 
+  };
+  var confetti = new ConfettiGenerator(confettiSettings);
+  confetti.render();
+
+  setTimeout(() => {
+    confetti.clear();
+  }, 4000);
+}
+
 
 /* Preguntas utilizadas -------------------------- */
 const historialRespuestasPreguntas = [];
@@ -98,11 +118,12 @@ function comprobacionNivel() {
         256.31,0 	"/>
     </g>
     </svg>`;
+    efectoConfeti()
     contenedorLogroUno.classList.add('contenedor__logro__1')
     document.querySelector('.contenedor__logros').appendChild(contenedorLogroUno);
     alert('¡¡Has alcanzado nivel 1 🎉🎉!! ¡¡Has conseguido una ⭐!!')
     nivelUnoAlcanzado = true;
-
+    
   }
 }
 
@@ -126,6 +147,7 @@ function comprobacionNivelDos() {
     contenedorLogroDos.classList.add('contenedor__logro__2')
     document.querySelector('.contenedor__logros').appendChild(contenedorLogroDos);
     alert('¡¡Has alcanzado nivel 2 🎉🎉!! ¡¡Has conseguido tu segunda ⭐!!')
+  
     nivelDosAlcanzado = true;
   }
 }
@@ -155,8 +177,8 @@ function comprobacionNivelTres() {
 }
 
 /* Juego acabado--------------------- */
-function juegoFin(){
-  if(sfTiempoTotal >= 100){
+function juegoFin() {
+  if (sfTiempoTotal >= 100) {
     return alert('🎉🎉 ¡Te has pasado el juego! 🎉🎉 ');
   }
 }
@@ -200,6 +222,8 @@ if (document.body.classList.contains('index')) {
       }
     }, 1000)
   });
+
+
 
   function seleccionPregunta() {
     fetch('./plazos_lopacaapp.json')
