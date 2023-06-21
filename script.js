@@ -61,8 +61,7 @@ const btnFalsoRipple = document.querySelector(".btn-ripple-falso");
 /* Efecto confetti -------------------------------- */
 
 const panelCanvas = document.getElementById('my-canvas');
-panelCanvas.classList.add('canvas-transition')
-console.log(panelCanvas);
+
 
 function efectoConfeti() {
   var confettiSettings = { 

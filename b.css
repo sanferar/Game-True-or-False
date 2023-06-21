@@ -11317,6 +11317,11 @@ fieldset:disabled .btn {
 }
 
 
+
+/* Fin estilos bootstrap --------------------------------------------------------------- */
+/* Inicio estilos propios ----------------------------------------------------------------------  */
+
+
 body{
   box-sizing: border-box;
 }
@@ -11326,12 +11331,8 @@ body{
   box-sizing: border-box;
 }
 
-
-
-
 .row{
   background-color: #d3d3d4;
-  width: 100%;
 }
 
 .btn-falso{
@@ -11355,7 +11356,7 @@ body{
 }
 
 
-/* Pantalla start */
+/* Pantalla start ---------------------------------------- */
 
 .pantalla-start {
   display: flex;
@@ -11392,18 +11393,6 @@ body{
   margin: 1em 3em;
 }
 
-
-/* #enlace-btn-start {
-
-  margin: 2em 2em;
-  padding: .75em 2em;
-  font-size: 2em;
-  color: white;
-  border-radius: .50em;
-  background-color: #F96167;
-}
- */
-
 #enlace-btn-start  {
   text-decoration: none;
   width: 50%;
@@ -11429,64 +11418,7 @@ body{
 
 
 
-
-@media (max-width:480px) {
-  #enlace-btn-start  {
-    text-decoration: none;
-    width: 100%;
-    text-align: center;
-    font-size: 16px;
-    background-color: #004BCC;
-    color: white;
-    padding: 10px 20px;
-    margin: 1.30em 0 1em;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    position: relative;
-    border-radius: 5px;
-    box-shadow: 0 7px #0052E0, 0 7px 7px 1px #4f4f4f, 0 0 #004BCC inset;
-    transition: box-shadow 0.15s, margin 0.15s;
-  }
-  
-  #enlace-btn-start:active {
-    margin: 7px 0 0;
-    box-shadow: 0 0 #0052E0, 0 0 #2f2f2f, 0 3px 14px #004FD9 inset;
-  }
-
-  .pantalla-start-text{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-flow: column;
-    width: 100vw;
-    padding: 2em;
-  }
-  
-  .pantalla-start ul{
-    list-style: none;
-    font-size: 0.75rem;
-    padding-left: 0em;
-  }
-  
-  .pantalla-start-h1 > .h1{
-    font-size: 3rem;
-    font-family: 'Nunito', regular;
-    text-align: center;
-    line-height: 1em;
-    margin-bottom: .50em;
-  }
-  
-  .pantalla-start-p{
-    margin: 1em 0em;
-    font-size: 1rem;
-    text-align: left;
-  }
-  
-}
-
 /* Pantalla Resultados ------------------------------------------*/
-
 
 .fin-partida{
   display: flex;
@@ -11558,8 +11490,6 @@ body{
   border-top: 1px solid grey;
   padding-top: 1em;
 }
-
-
 
 .contador-f{
   border: 1px solid #34383c;
@@ -11752,34 +11682,8 @@ body{
   margin-right: .25em;
 }
 
-@media (max-width:480px) {
 
-  .cabecera-datos-live{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .caja-info-dato{
-    margin: 5px 5px;
-    padding: 5px;
-    border: 0px;
-    min-width: 30px;
-    font-size: 0.80rem;
-  }
-
-  .bi{
-    margin-right: .20em;
-  }
-}
-
-
-
-
-
-/* Tarjeta movimiento */
-
+/* Tarjeta movimiento ----------------------------------------*/
 
 .card-body{
   display: flex;
@@ -11931,11 +11835,303 @@ body{
   }
 }
 
+.li-respuestas-falladas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin: 1em;
+}
+
+.li_contenedor_resultados{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  padding: 24px;
+  margin-bottom: 24px;
+  margin-top: 24px;
+  border-radius: 4px;
+}
+
+.li_contenedor_resultados_item{
+  margin: .5em;
+  list-style: none;
+}
+
+.li_contenedor_resultados_item2{
+  display: flex;
+  justify-content:space-between;
+  margin: .5em;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.li_contenedor_resultados_item2 > li{
+  text-decoration: none;
+  list-style: none;
+}
+
+/* efecto ripple -----------------------------*/
+.btn-ripple-verdadero {
+  padding: 12px 50px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 6px 7px 40px -4px
+      rgba(0, 0, 0, 0.2);
+}
+
+.btn-ripple-verdadero span {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    /* for positioning */
+    margin-left: -50px;
+  
+    -webkit-animation: ripple 1s;
+  
+            animation: ripple 1s;
+    opacity: 0;
+}
+
+.btn-ripple-falso {
+  padding: 12px 50px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 6px 7px 40px -4px
+      rgba(0, 0, 0, 0.2);
+}
+
+.btn-ripple-falso span {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    /* for positioning */
+    margin-left: -50px;
+  
+    -webkit-animation: ripple 1s;
+  
+            animation: ripple 1s;
+    opacity: 0;
+}
+  
+@-webkit-keyframes ripple {
+  from {
+      opacity: 1;
+      transform: scale(0);
+  }
+
+  to {
+      opacity: 0;
+      transform: scale(10);
+  }
+}
+@keyframes ripple {
+  from {
+      opacity: 1;
+      transform: scale(0);
+  }
+
+  to {
+      opacity: 0;
+      transform: scale(10);
+  }
+}
+
+/* Estilos provisionales contenedor logros ----------- */
+
+.contenedor__logro__1{
+  padding: 5px;
+}
+.contenedor__logro__2{
+  padding: 5px;
+}
+
+.contenedor__logro__3{
+  padding: 5px;
+}
+
+.contenedor__logros{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-content: center;
+  margin-bottom: 24px;
+}
+
+
+/*  Contenedor y estilos de la progress bar ------------ */
+
+.progress-bar{
+  height: 4px;
+  border-radius: 0;
+}
+
+.progress{
+  height: auto;
+}
+
+/* Contenedor de info de iconos en la pantalla de inicio ------------- */
+
+.contenedor__info{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 0.90em;
+  gap: 1rem;
+}
+
+.contenedor__info__tiempo{
+  display: flex;
+  width: 250px;
+  justify-content: flex-start;
+  gap: 12px;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 10px;
+}
+.contenedor__info__tiempo .bi{
+  font-size: 2rem;
+}
+.contenedor__info__puntos{
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+  width: 250px;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 10px;
+}
+.contenedor__info__puntos .bi{
+  font-size: 2rem;
+}
+.contenedor__info__aciertos{
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+  width: 250px;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 10px;
+}
+.contenedor__info__aciertos .bi{
+  font-size: 2rem;
+}
+.contenedor__info__fallos{
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+  width: 250px;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 10px;
+}
+.contenedor__info__fallos .bi{
+  font-size: 2rem;
+}
+.contenedor__info__logros{
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+  width: 250px;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 10px;
+}
+.contenedor__info__logros .bi{
+  font-size: 2rem;
+}
+
+
+/* Lienzo para la creación del canvas para aplicar la libreria confetti.js */
+#my-canvas{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+}
 
 
 
 
 /* MEDIA QUERY---------------------------- */
+
+/* MQ pantalla inicio ---------------------- */
+
+@media (max-width:480px) {
+  #enlace-btn-start  {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    background-color: #004BCC;
+    color: white;
+    padding: 10px 20px;
+    margin: 1.30em 0 1em;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 7px #0052E0, 0 7px 7px 1px #4f4f4f, 0 0 #004BCC inset;
+    transition: box-shadow 0.15s, margin 0.15s;
+  }
+  
+  #enlace-btn-start:active {
+    margin: 7px 0 0;
+    box-shadow: 0 0 #0052E0, 0 0 #2f2f2f, 0 3px 14px #004FD9 inset;
+  }
+
+  .pantalla-start-text{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column;
+    width: 100vw;
+    padding: 2em;
+  }
+  
+  .pantalla-start ul{
+    list-style: none;
+    font-size: 0.75rem;
+    padding-left: 0em;
+  }
+  
+  .pantalla-start-h1 > .h1{
+    font-size: 3rem;
+    font-family: 'Nunito', regular;
+    text-align: center;
+    line-height: 1em;
+    margin-bottom: .50em;
+  }
+  
+  .pantalla-start-p{
+    margin: 1em 0em;
+    font-size: 1rem;
+    text-align: left;
+  }
+}
 
 
 /* Ajuste de movimiento de tarjetas */
@@ -12012,28 +12208,48 @@ body{
   }
 
 
-.tarjeta-movimiento-1-ocultar{
-  transform: rotate(0deg);
-  transition: transform 600ms;
+  .tarjeta-movimiento-1-ocultar{
+    transform: rotate(0deg);
+    transition: transform 600ms;
+  }
+  
+  .tarjeta-movimiento-2-ocultar{
+    transform: rotate(0deg);
+    transition: transform 600ms;
+  }
+  .tarjeta-movimiento-3-ocultar{
+    transform: rotate(0deg);
+    transition: transform 600ms;
+  }
 }
 
-.tarjeta-movimiento-2-ocultar{
-  transform: rotate(0deg);
-  transition: transform 600ms;
-}
-.tarjeta-movimiento-3-ocultar{
-  transform: rotate(0deg);
-  transition: transform 600ms;
-}
+/* MQ Cabecera datos live ------------------------- */
+@media (max-width:480px) {
+
+  .cabecera-datos-live{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .caja-info-dato{
+    margin: 5px 5px;
+    padding: 5px;
+    border: 0px;
+    min-width: 30px;
+    font-size: 0.80rem;
+  }
+
+  .bi{
+    margin-right: .20em;
+  }
 }
 
 
-/*Pantalla fin-partida  */
+/* Pantalla fin-partida -------------------  */
 
 @media (max-width: 480px) {
-
-
-  
   .fin-partida{
     display: flex;
     justify-content: center;
@@ -12109,8 +12325,6 @@ body{
     border-top: 1px solid grey;
     padding-top: 1em;
   }
-  
- 
   
   .estadistica-final{
     -webkit-animation: myAnim 3s linear 2s  normal forwards;
@@ -12199,10 +12413,7 @@ body{
   .pantalla-resultados > button {
     width: 100%;
   }
-
-}
-
-.li-respuestas-falladas{
+  .li-respuestas-falladas{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12223,6 +12434,7 @@ body{
 
 .li_contenedor_resultados_item{
   margin: .5em;
+  list-style: none;
 }
 
 .li_contenedor_resultados_item2{
@@ -12238,120 +12450,11 @@ body{
   list-style: none;
 }
 
-
-
-
-/* efecto ripple -----------------------------*/
-
-
-.btn-ripple-verdadero {
-  padding: 12px 50px;
-  border: none;
-  color: #fff;
-  font-size: 18px;
-  outline: none;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 6px 7px 40px -4px
-      rgba(0, 0, 0, 0.2);
-}
-
-.btn-ripple-verdadero span {
-    position: absolute;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 100px;
-    height: 100px;
-    margin-top: -50px;
-    /* for positioning */
-    margin-left: -50px;
-  
-    -webkit-animation: ripple 1s;
-  
-            animation: ripple 1s;
-    opacity: 0;
-}
-  
-/* Add animation */
-@-webkit-keyframes ripple {
-    from {
-        opacity: 1;
-        transform: scale(0);
-    }
-  
-    to {
-        opacity: 0;
-        transform: scale(10);
-    }
-}
-@keyframes ripple {
-    from {
-        opacity: 1;
-        transform: scale(0);
-    }
-  
-    to {
-        opacity: 0;
-        transform: scale(10);
-    }
-}
-
-.btn-ripple-falso {
-  padding: 12px 50px;
-  border: none;
-  color: #fff;
-  font-size: 18px;
-  outline: none;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 6px 7px 40px -4px
-      rgba(0, 0, 0, 0.2);
-}
-
-.btn-ripple-falso span {
-    position: absolute;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 100px;
-    height: 100px;
-    margin-top: -50px;
-    /* for positioning */
-    margin-left: -50px;
-  
-    -webkit-animation: ripple 1s;
-  
-            animation: ripple 1s;
-    opacity: 0;
-}
-  
-/* Add animation */
-@-webkit-keyframes ripple {
-    from {
-        opacity: 1;
-        transform: scale(0);
-    }
-  
-    to {
-        opacity: 0;
-        transform: scale(10);
-    }
-}
-@keyframes ripple {
-    from {
-        opacity: 1;
-        transform: scale(0);
-    }
-  
-    to {
-        opacity: 0;
-        transform: scale(10);
-    }
 }
 
 
-/* Media query tablet-------------------- */
+/* Media query tablet  -------------------- */
+
 @media (min-width: 480px) and (max-width: 900px){
   .pregunta{
     font-size: .9rem;
@@ -12423,129 +12526,25 @@ body{
   }
 
 
-.tarjeta-movimiento-1-ocultar{
-  transform: rotate(0deg);
-  transition: transform 600ms;
-}
-
-.tarjeta-movimiento-2-ocultar{
-  transform: rotate(0deg);
-  transition: transform 600ms;
-}
-.tarjeta-movimiento-3-ocultar{
-  transform: rotate(0deg);
-  transition: transform 600ms;
-}
-}
-
-/* Estilos provisionales contenedor logros */
-.contenedor__logro__1{
-  padding: 5px;
-}
-.contenedor__logro__2{
-  padding: 5px;
-}
-
-.contenedor__logro__3{
-  padding: 5px;
-}
-
-.contenedor__logros{
-  display: flex;
-  justify-content: flex-start;
-  gap: 5px;
-  align-content: center;
-  margin-bottom: 24px;
+  .tarjeta-movimiento-1-ocultar{
+    transform: rotate(0deg);
+    transition: transform 600ms;
+  }
+  
+  .tarjeta-movimiento-2-ocultar{
+    transform: rotate(0deg);
+    transition: transform 600ms;
+  }
+  .tarjeta-movimiento-3-ocultar{
+    transform: rotate(0deg);
+    transition: transform 600ms;
+  }
 }
 
 
 
-.progress-bar{
-  height: 4px;
-  border-radius: 0;
-}
-
-.progress{
-  height: auto;
-}
-
-.contenedor__info{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  font-size: 0.90em;
-  gap: 1rem;
-}
-
-.contenedor__info__tiempo{
-  display: flex;
-  width: 250px;
-  justify-content: flex-start;
-  gap: 12px;
-  flex-direction: column;
-  background-color: #fff;
-  padding: 1.2rem;
-  border-radius: 10px;
-}
-.contenedor__info__tiempo .bi{
-  font-size: 2rem;
-}
-.contenedor__info__puntos{
-  display: flex;
-  justify-content: flex-start;
-  gap: 12px;
-  width: 250px;
-  flex-direction: column;
-  background-color: #fff;
-  padding: 1.2rem;
-  border-radius: 10px;
-}
-.contenedor__info__puntos .bi{
-  font-size: 2rem;
-}
-.contenedor__info__aciertos{
-  display: flex;
-  justify-content: flex-start;
-  gap: 12px;
-  width: 250px;
-  flex-direction: column;
-  background-color: #fff;
-  padding: 1.2rem;
-  border-radius: 10px;
-}
-.contenedor__info__aciertos .bi{
-  font-size: 2rem;
-}
-.contenedor__info__fallos{
-  display: flex;
-  justify-content: flex-start;
-  gap: 12px;
-  width: 250px;
-  flex-direction: column;
-  background-color: #fff;
-  padding: 1.2rem;
-  border-radius: 10px;
-}
-.contenedor__info__fallos .bi{
-  font-size: 2rem;
-}
-.contenedor__info__logros{
-  display: flex;
-  justify-content: flex-start;
-  gap: 12px;
-  width: 250px;
-  flex-direction: column;
-  background-color: #fff;
-  padding: 1.2rem;
-  border-radius: 10px;
-}
-.contenedor__info__logros .bi{
-  font-size: 2rem;
-}
-
-
-
-/* Media query iconos e info--------------- */
+/* Media query ------ */
+/* de info de iconos en la pantalla de inicio--------------- */
 
 @media (max-width:480px){
   .contenedor__info{
@@ -12625,11 +12624,4 @@ body{
 }
 
 
-/* Lienzo para la creación del canvas para aplicar la libreria confetti.js */
-#my-canvas{
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  opacity: 1;
-}
 
